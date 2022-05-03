@@ -1,7 +1,10 @@
 package com.wasp.kafka;
 
 import lombok.extern.slf4j.Slf4j;
-import org.apache.kafka.clients.producer.*;
+import org.apache.kafka.clients.producer.Callback;
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.common.serialization.StringSerializer;
 
 import java.util.Properties;
@@ -38,16 +41,12 @@ public class ProducerDemoWithCallback {
             //executes every time a record is successfully sent or an exception is thrown
             if (exception == null) {
                 //success - no exception
-                logMetadata(metadata);
+                log.info("Received new metadata:\n" +
+                        "topic: " + metadata.topic() + "\n" +
+                        "partition: " + metadata.partition() + "\n" +
+                        "offset: " + metadata.offset() + "\n" +
+                        "timestamp: " + metadata.timestamp());
             } else log.error("Error while producing", exception);
         };
-    }
-
-    private static void logMetadata(RecordMetadata metadata) {
-        log.info("Received new metadata:\n" +
-                "topic: " + metadata.topic() + "\n" +
-                "partition: " + metadata.partition() + "\n" +
-                "offset: " + metadata.offset() + "\n" +
-                "timestamp: " + metadata.timestamp());
     }
 }
