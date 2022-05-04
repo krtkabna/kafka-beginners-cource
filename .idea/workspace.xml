@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6767b89d-5ec6-46a6-8ae0-880bd659404a" name="Changes" comment="create ConsumerDemo">
+    <list default="true" id="6767b89d-5ec6-46a6-8ae0-880bd659404a" name="Changes" comment="create ConsumerDemoCooperative">
       <change afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/consumer/ConsumerDemoCooperative.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/consumer/ConsumerUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/consumer/ConsumerConstants.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/consumer/ConsumerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/consumer/ConsumerDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/consumer/ConsumerDemoWithShutdown.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/consumer/ConsumerDemoWithShutdown.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/producer/ProducerConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/CommonConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/producer/ProducerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/producer/ProducerDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/producer/ProducerDemoWithCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/producer/ProducerDemoWithCallback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/producer/ProducerDemoWithKeys.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/producer/ProducerDemoWithKeys.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +101,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "jdk.selected.JAVA_MODULE": "corretto-11",
     "last_opened_file_path": "/Users/wasp/luxoft/kafka udemy/kafka-beginners-course/build.gradle",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
@@ -287,7 +282,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651586621145</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="refactor">
+      <created>1651676407896</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1651676407897</updated>
+    </task>
+    <task id="LOCAL-00009" summary="refactor">
+      <created>1651676438478</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1651676438478</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -307,9 +316,10 @@
     <MESSAGE value="create ProducerDemoWithCallback" />
     <MESSAGE value="refactor ProducerDemoWithCallback" />
     <MESSAGE value="create ProducerDemoWithKeys" />
-    <MESSAGE value="refactor" />
     <MESSAGE value="create ConsumerDemo" />
-    <option name="LAST_COMMIT_MESSAGE" value="create ConsumerDemo" />
+    <MESSAGE value="refactor" />
+    <MESSAGE value="create ConsumerDemoCooperative" />
+    <option name="LAST_COMMIT_MESSAGE" value="create ConsumerDemoCooperative" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/kafka_beginners_cource$ConsumerDemoWithShutdown.ic" NAME="ConsumerDemoWithShutdown Coverage Results" MODIFIED="1651586444692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
