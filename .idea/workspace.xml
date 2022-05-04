@@ -5,13 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6767b89d-5ec6-46a6-8ae0-880bd659404a" name="Changes" comment="create ConsumerDemo">
+      <change afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/consumer/ConsumerDemoCooperative.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/consumer/ConsumerUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/consumer/ConsumerConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/consumer/ConsumerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/consumer/ConsumerDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/consumer/ConsumerDemoWithShutdown.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/consumer/ConsumerDemoWithShutdown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/producer/ProducerConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/CommonConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/producer/ProducerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/producer/ProducerDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/producer/ProducerDemoWithCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/producer/ProducerDemoWithCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/producer/ProducerDemoWithKeys.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-basics/src/main/java/com/wasp/kafka/producer/ProducerDemoWithKeys.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="2" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -25,6 +36,9 @@
           <activation />
         </task>
         <task path="$PROJECT_DIR$/kafka-basics">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/kafka-basics --warning-mode all">
           <activation />
         </task>
         <projects_view>
@@ -76,6 +90,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/3.1.0/948bb6f7cabec0af0368a5e14dc7e3e49186b4db/kafka-clients-3.1.0-sources.jar!/org/apache/kafka/clients/producer/Callback.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/3.1.0/948bb6f7cabec0af0368a5e14dc7e3e49186b4db/kafka-clients-3.1.0-sources.jar!/org/apache/kafka/clients/producer/KafkaProducer.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/3.1.0/948bb6f7cabec0af0368a5e14dc7e3e49186b4db/kafka-clients-3.1.0-sources.jar!/org/apache/kafka/clients/producer/RecordMetadata.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -89,7 +108,7 @@
   "keyToString": {
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "last_opened_file_path": "/Users/wasp/luxoft/kafka udemy/kafka-beginners-course/build.gradle",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -106,10 +125,10 @@
       <command value="gradle kafka-basics:assemble" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.ConsumerDemoWithShutdown">
-    <configuration name="ConsumerDemoWithShutdown" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wasp.kafka.consumer.ConsumerDemoWithShutdown" />
-      <module name="kafka-beginners-cource.kafka-basics.main" />
+  <component name="RunManager" selected="Application.com.wasp.kafka.producer.ProducerDemoWithKeys">
+    <configuration name="ConsumerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wasp.kafka.consumer.ConsumerDemo" />
+      <module name="kafka-beginners-course.kafka-basics.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.wasp.kafka.consumer.*" />
@@ -120,81 +139,69 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="kafka-beginners-cource [kafka-basics:assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="kafka-basics:assemble" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="ConsumerDemoCooperative" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wasp.kafka.consumer.ConsumerDemoCooperative" />
+      <module name="kafka-beginners-course.kafka-basics.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wasp.kafka.consumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="kafka-beginners-cource:kafka-basics [check]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/kafka-basics" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="check" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="ConsumerDemoWithShutdown" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wasp.kafka.consumer.ConsumerDemoWithShutdown.java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wasp.kafka.consumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="kafka-beginners-cource:kafka-basics [compileJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/kafka-basics" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="compileJava" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="ProducerDemoWithKeys" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wasp.kafka.producer.ProducerDemoWithKeys" />
+      <module name="kafka-beginners-course.kafka-basics.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wasp.kafka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="kafka-beginners-cource:kafka-basics [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="com.wasp.kafka.consumer.ConsumerDemoWithShutdown" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wasp.kafka.consumer.ConsumerDemoWithShutdown" />
+      <module name="kafka-beginners-course.kafka-basics.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wasp.kafka.consumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="kafka-beginners-course:kafka-basics [:kafka-basics:ProducerDemoWithKeys.main()]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/kafka-basics" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="--warning-mode all --stacktrace" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="test" />
+            <option value=":kafka-basics:ProducerDemoWithKeys.main()" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -204,13 +211,21 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.ConsumerDemoCooperative" />
+      <item itemvalue="Application.com.wasp.kafka.producer.ProducerDemoWithKeys" />
+      <item itemvalue="Application.com.wasp.kafka.consumer.ConsumerDemoWithShutdown" />
+      <item itemvalue="Application.ConsumerDemo" />
+      <item itemvalue="Application.ConsumerDemoWithShutdown" />
+      <item itemvalue="Gradle.kafka-beginners-course:kafka-basics [:kafka-basics:ProducerDemoWithKeys.main()]" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ConsumerDemoCooperative" />
+        <item itemvalue="Application.com.wasp.kafka.producer.ProducerDemoWithKeys" />
+        <item itemvalue="Application.com.wasp.kafka.consumer.ConsumerDemoWithShutdown" />
+        <item itemvalue="Application.ConsumerDemo" />
         <item itemvalue="Application.ConsumerDemoWithShutdown" />
-        <item itemvalue="Gradle.kafka-beginners-cource:kafka-basics [check]" />
-        <item itemvalue="Gradle.kafka-beginners-cource:kafka-basics [test]" />
-        <item itemvalue="Gradle.kafka-beginners-cource:kafka-basics [compileJava]" />
-        <item itemvalue="Gradle.kafka-beginners-cource [kafka-basics:assemble]" />
       </list>
     </recent_temporary>
   </component>
@@ -299,6 +314,15 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/kafka_beginners_cource$ConsumerDemoWithShutdown.ic" NAME="ConsumerDemoWithShutdown Coverage Results" MODIFIED="1651586444692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.wasp.kafka.consumer.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/kafka_beginners_course$ConsumerDemoCooperative.ic" NAME="ConsumerDemoCooperative Coverage Results" MODIFIED="1651673924733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.wasp.kafka.consumer.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/kafka_beginners_course$com_wasp_kafka_consumer_ConsumerDemoWithShutdown.ic" NAME="com.wasp.kafka.consumer.ConsumerDemoWithShutdown Coverage Results" MODIFIED="1651670082682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.wasp.kafka.consumer.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/kafka_beginners_course$ProducerDemoWithKeys.ic" NAME="ProducerDemoWithKeys Coverage Results" MODIFIED="1651670157280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.wasp.kafka.*</FILTER>
     </SUITE>
   </component>
 </project>

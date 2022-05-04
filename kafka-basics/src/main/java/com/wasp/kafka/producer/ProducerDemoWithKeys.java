@@ -1,12 +1,12 @@
 package com.wasp.kafka.producer;
 
+import com.wasp.kafka.CommonConstants;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.*;
 import org.apache.kafka.common.serialization.StringSerializer;
 
 import java.util.Properties;
 
-import static com.wasp.kafka.producer.ProducerConstants.*;
 
 @Slf4j
 public class ProducerDemoWithKeys {
@@ -16,7 +16,7 @@ public class ProducerDemoWithKeys {
 
         //create Producer properties
         Properties properties = new Properties();
-        properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, BOOTSTRAP_SERVER);
+        properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, CommonConstants.BOOTSTRAP_SERVER);
         properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
 
@@ -28,7 +28,7 @@ public class ProducerDemoWithKeys {
                 String key = "id_" + i;
                 String value = "hello world" + i;
 
-                ProducerRecord<String, String> producerRecord = new ProducerRecord<>(TOPIC, key, value);
+                ProducerRecord<String, String> producerRecord = new ProducerRecord<>(CommonConstants.TOPIC, key, value);
 
                 //send data - async
                 producer.send(producerRecord, logMetadataCallback(producerRecord.key()));

@@ -1,5 +1,6 @@
 package com.wasp.kafka.producer;
 
+import com.wasp.kafka.CommonConstants;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
@@ -7,8 +8,6 @@ import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.common.serialization.StringSerializer;
 
 import java.util.Properties;
-
-import static com.wasp.kafka.producer.ProducerConstants.*;
 
 @Slf4j
 public class ProducerDemo {
@@ -18,14 +17,14 @@ public class ProducerDemo {
 
         //create Producer properties
         Properties properties = new Properties();
-        properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, BOOTSTRAP_SERVER);
+        properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, CommonConstants.BOOTSTRAP_SERVER);
         properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
 
         //create the Producer
         try (KafkaProducer<String, String> producer = new KafkaProducer<>(properties)) {
             //create producer record
-            ProducerRecord<String, String> producerRecord = new ProducerRecord<>(TOPIC, "hello world");
+            ProducerRecord<String, String> producerRecord = new ProducerRecord<>(CommonConstants.TOPIC, "hello world");
 
             //send data - async
             producer.send(producerRecord);
